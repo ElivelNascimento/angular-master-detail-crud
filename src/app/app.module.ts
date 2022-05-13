@@ -9,6 +9,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataBase } from './in-memory-database';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriesModule } from './pages/categories/categories.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CategoriesModule } from './pages/categories/categories.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CategoriesModule,  
+    CategoriesModule, 
+    RouterModule, 
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataBase)
   ],
   providers: [],

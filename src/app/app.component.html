@@ -5,12 +5,18 @@
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav" routerLinkActive="active">
-        <a class="nav-link active" routerLink="/reports">Relatórios</a>
-        <a class="nav-link" routerLink="/entries">Lançamentos</a>
-        <a class="nav-link" routerLink="/categories">Categorias</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link active" routerLink="/reports">Relatórios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/entries">Lançamentos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/categories">Categorias</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
